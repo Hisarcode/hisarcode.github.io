@@ -50,186 +50,233 @@
           content: "";
           display: table;
           clear: both;
-        }
-        
-        footer{
-            background-color: #777;
-            padding : 10px;
-            text-align: center;
-            color:white;
-        }
-        iframe{
-            margin:auto;
-            width : 640px;
-            height: 640px;
-        }
-
-        .container {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-wrap: wrap;
       }
 
-      .item {
-          padding: 30px;
-          width: 32%;
-          height: 500px;
-          background-color: rgb(255,150,100);
-      }
+      footer{
+        background-color: #777;
+        padding : 10px;
+        text-align: center;
+        color:white;
+    }
+    iframe{
+        margin:auto;
+        width : 640px;
+        height: 640px;
+    }
 
-      .oldanlu{
-        margin-left : 10px;
-      }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+  }
 
-      iframe , video{
-        width: 100%;
-        height: 100% ;
-        border : 3px;
-      }
+  .item {
+      padding: 30px;
+      width: 32%;
+      height: 500px;
+      background-color: rgb(255,150,100);
+  }
 
-      @media (max-width: 600px) {
-      header, nav ul, iframe, article, .item   {
-            width: 100%;
-       }
-       nav{
+  .oldanlu{
+    margin-left : 10px;
+}
+
+iframe , video{
+    width: 100%;
+    height: 100% ;
+    border : 3px;
+}
+
+@media (max-width: 600px) {
+  header, nav ul, iframe, article, .item   {
+    width: 100%;
+}
+nav{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
         width: 100%;
         height: 100%;
-       }
-      }
+}
+
+table {
+    border: 0;
+}
+
+  
+table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+  
+table tr {
+    display: block;
+    margin-bottom: .625em;
+}
+
+table td {
+    display: block;
+    text-align: left;
+}
+  
+table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+  
+table td:last-child {
+    border-bottom: 0;
+}
+
+}
 
 </style>
 </head>
 
 <body >
-            
+
 
     <a href="Intro.html">
         <img src="image/back.png" height="55px" width="50px" title="Tombol Kembali" style="float:left; margin-left: 10px; margin-top: 10px;">
     </a>
 
     <header>
-    <h2>Biodata Saya</h2>    
+        <h2>Biodata Saya</h2>    
     </header>
 
     
     <section>  
-    <nav> 
-        <h4>Foto Foto Saya</h4>
-        <ul>
-            <li><img src="image/profil.jpg" alt="Foto Profil" title="Wajah Tampan" height="200px" width="300px"></li>
-            <li><img src="https://hisarcode-galery.herokuapp.com/img/portofolio/3.jpg" alt="Foto Profil" title="Wajah Tampan" height="200px" width="300px"></li>
-        </ul>
-    </nav>
+        <nav> 
+            <h4>Foto Foto Saya</h4>
+            <ul>
+                <li><img src="image/profil.jpg" alt="Foto Profil" title="Wajah Tampan" height="200px" width="300px"></li>
+                <li><img src="https://hisarcode-galery.herokuapp.com/img/portofolio/3.jpg" alt="Foto Profil" title="Wajah Tampan" height="200px" width="300px"></li>
+            </ul>
+        </nav>
 
-    <article>
-    <h3>
-        <table cellspacing="10"> 
-            <tr>
-                <td>Nama </td> 
-                <td>: Hisarman Saragih</td>
-            </tr>
+        <article>
+            <h3>
+                <table cellspacing="10"> 
+                    <tr>
+                        <td>Nama </td> 
+                        <td>: Hisarman Saragih</td>
+                    </tr>
 
-            <tr>
-                <td>NIM </td> 
-                <td>: D1041171013</td>
-            </tr>
+                    <tr>
+                        <td>NIM </td> 
+                        <td>: D1041171013</td>
+                    </tr>
 
-            <tr>
-                <td>Tempat Tanggal Lahir </td> 
-                <td>: Ketapang, 30 Agustus 1999</td>
-            </tr>
+                    <tr>
+                        <td>Tempat Tanggal Lahir </td> 
+                        <td>: Ketapang, 30 Agustus 1999</td>
+                    </tr>
 
 
-            <tr>
-                <td>Jenis Kelamin</td>
-                <td>: Laki-Laki </td>
-            </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>: Laki-Laki </td>
+                    </tr>
 
-            <tr>
-                <td>Pekerjaan</td>
-                <td>: Mahasiswa</td>
-            </tr>
+                    <tr>
+                        <td>Pekerjaan</td>
+                        <td>: Mahasiswa</td>
+                    </tr>
 
-            <tr>
-                <td>Alamat</td>
-                <td>: Jalan Purnama Agung 7 Blok T29</td>
-            </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>: Jalan Purnama Agung 7 Blok T29</td>
+                    </tr>
 
-            <tr>
-                <td>Status</td>
-                <td>: Belum Nikah</td>
-            </tr>
-            
+                    <tr>
+                        <td>Status</td>
+                        <td>: Belum Nikah</td>
+                    </tr>
 
-            <tr>
-                <td>Hero Favorit ML</td>
-                <td>: Thamuz (WR : 58%)</td>
-            </tr>
 
-            <tr>
-                <td>Ukuran Sepatu</td>
-                <td>: 43/44</td>
-            </tr>
+                    <tr>
+                        <td>Hero Favorit ML</td>
+                        <td>: Thamuz (WR : 58%)</td>
+                    </tr>
 
-            <tr>
-                <td>Ukuran Baju </td>
-                <td>: XL</td>
-            </tr>
-        </table>     
-        <div class="oldanlu">
-        Riwayat Pendidikan : 
-        <ol type="1">
-            <li>SD Pangudi Luhur Santo Yosef Ketapang</li>
-            <li>SMP Pangudi Luhur Santo Albertus Ketapang</li>
-            <li>SMA Negeri 1 Ketapang </li>
-        </ol>
-        
-        Daftar Akun Media Sosial
-        <ol type="1">
-            <li>Facebook : Hisarman Saragih</li>
-            <li>Instagram : @hisarmansaragih</li>
-            <li>Twitter : @HISARMAN </li>
-            <li>Youtube : Hisarman Saragih   </li> 
-        </ol>
-        
-        Daftar Hobi
-        <ul type="1">
-            <li>Memancing</li>
-            <li>Traveling</li>
-            <li>Membaca </li>
-        </ul>
-    </div>
-    </h3>
-    </article>
+                    <tr>
+                        <td>Ukuran Sepatu</td>
+                        <td>: 43/44</td>
+                    </tr>
 
-    <header>Hasil-Hasil Karya Saya</header> 
+                    <tr>
+                        <td>Ukuran Baju </td>
+                        <td>: XL</td>
+                    </tr>
+                </table>     
+                <div class="oldanlu">
+                    Riwayat Pendidikan : 
+                    <ol type="1">
+                        <li>SD Pangudi Luhur Santo Yosef Ketapang</li>
+                        <li>SMP Pangudi Luhur Santo Albertus Ketapang</li>
+                        <li>SMA Negeri 1 Ketapang </li>
+                    </ol>
 
-    <div class="container">
-      <div class="item">
-        <iframe src="https://hisarcode-galery.herokuapp.com/index.html"></iframe>
-    </div>
-    <div class="item">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BqMPDshMBhA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-    </div>
-    <div class="item">
-        <video  controls>
-            <source src="movie.mp4" type="video/mp4">  
-            </video> 
+                    Daftar Akun Media Sosial
+                    <ol type="1">
+                        <li>Facebook : Hisarman Saragih</li>
+                        <li>Instagram : @hisarmansaragih</li>
+                        <li>Twitter : @HISARMAN </li>
+                        <li>Youtube : Hisarman Saragih   </li> 
+                    </ol>
+
+                    Daftar Hobi
+                    <ul type="1">
+                        <li>Memancing</li>
+                        <li>Traveling</li>
+                        <li>Membaca </li>
+                    </ul>
+                </div>
+            </h3>
+        </article>
+
+        <header>Hasil-Hasil Karya Saya</header> 
+
+        <div class="container">
+          <div class="item">
+            <iframe src="https://hisarcode-galery.herokuapp.com/index.html"></iframe>
+        </div>
+        <div class="item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BqMPDshMBhA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+        </div>
+        <div class="item">
+            <video  controls>
+                <source src="movie.mp4" type="video/mp4">  
+                </video> 
+            </div>
+
         </div>
 
-    </div>
 
-    
-    
+
     </section>
 
     <footer>
 
-    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Check Waktu</button>
-    <p id="demo"><p>
-    </footer>
-       
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Check Waktu</button>
+        <p id="demo"><p>
+        </footer>
 
-</body>
-</html>
+
+    </body>
+    </html>
