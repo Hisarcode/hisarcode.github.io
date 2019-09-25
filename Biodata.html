@@ -26,7 +26,7 @@
         nav{
             float : left;
             width: 30%;
-            height: auto;
+            height: 807px;
             background : #ccc;
             padding: 20px;
             text-align: center;
@@ -62,14 +62,34 @@
             height: 640px;
         }
 
-        @media (max-width: 600px) {
-            nav, article,  {
-                width: 100%;
-                height: auto;
-            }
+        .container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+
+      .item {
+          padding: 30px;
+          width: 32%;
+          height: 500px;
+          background-color: rgb(255,150,100);
+      }
+
+      iframe , video{
+        width: 100%;
+        height: 100% ;
+        border : 3px;
+      }
+
+      @media (max-width: 600px) {
+        nav, article,  {
+            width: 100%;
+            height: auto;
         }
-        
-        </style>
+    }
+
+</style>
 </head>
 
 <body >
@@ -86,6 +106,7 @@
     
     <section>  
     <nav> 
+        <h4>Foto Foto Saya</h4>
         <ul>
             <li><img src="image/profil.jpg" alt="Foto Profil" title="Wajah Tampan" height="200px" width="300px"></li>
             <li><img src="https://hisarcode-galery.herokuapp.com/img/portofolio/3.jpg" alt="Foto Profil" title="Wajah Tampan" height="200px" width="300px"></li>
@@ -171,22 +192,26 @@
         </ul>
     </h3>
     </article>
-     
-    <article>    
-    <center> <h3>Hasil-Hasil Karya Saya</h3> </center>
-    <iframe src="https://hisarcode-galery.herokuapp.com/index.html"></iframe>
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/BqMPDshMBhA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <header>Hasil-Hasil Karya Saya</header> 
+
+    <div class="container">
+      <div class="item">
+        <iframe src="https://hisarcode-galery.herokuapp.com/index.html"></iframe>
+    </div>
+    <div class="item">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BqMPDshMBhA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+    </div>
+    <div class="item">
+        <video  controls>
+            <source src="movie.mp4" type="video/mp4">  
+            </video> 
+        </div>
+
+    </div>
+
     
-    <center>
-    <video width="320" height="240" controls>
-    <source src="movie.mp4" type="video/mp4">
-  
-    Your browser does not support the video tag.
     
-    </video> 
-    </center>
-    </article>
     </section>
 
     <footer>
