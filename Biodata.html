@@ -5,60 +5,95 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style >
-        hr{
-            width:250px;
-            border-top-width:3px; 
-            border-top-style:solid;
-            border-top-color:#e5d817;
-        }
-        section{
-            background-color:#ffffff;
-            margin-left: 100px;
-            margin-right: 100px;
-            margin-top: 30px;
-            margin-bottom: 0px;            
-            float: left;
-            
+        *{
+            box-sizing: border-box;
         }
 
-        .batas{
-            padding: 25px;            
+        body{
+            font-family : Arial, Helvetica, Georgia;
+            background-color: #efefef;
+            color:#333 ; 
         }
-        h1{
-            margin-top: 20px;
-        }
-        a{
-            margin-left: 100px;
-            float:left;
-        }
-        table{
-            margin-left: 10%;
-            marrgin-bottom:0px;
-            float:  top;
+
+        header{
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
         }
         
-        iframe{
-            margin-left: 100px;
-            width: 1000px;
-            height: 600px;
-    
+        nav{
+            float : left;
+            width: 30%;
+            height: auto;
+            background : #ccc;
+            padding: 20px;
+            text-align: center;
         }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article{
+            float: left;
+            padding : 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: auto;
+        }
+
+        section:after{
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        footer{
+            background-color: #777;
+            padding : 10px;
+            text-align: center;
+            color:white;
+        }
+        iframe{
+            margin:auto;
+            width : 640px;
+            height: 640px;
+        }
+
+        @media (max-width: 600px) {
+            nav, article,  {
+                width: 100%;
+                height: auto;
+            }
+        }
+        
         </style>
 </head>
-<body style="background-color: #efefef; color:#333 ; font-family: georgia">
-    <a href="Intro.html">
-        <img src="image/back.png" height="55px" width="50px" title="Tombol Kembali">
-    </a>
-    <center>
-        
-    <h1>Biodata Saya</h1>
-    <hr >
-    </center>
-    <section>   
-    <img src="image/profil.jpg" alt="Foto Profil" title="Wajah Tampan" height="300px" width="400px">     
-    </section>
 
-    <h3 style="margin-left: 100px">
+<body >
+            
+
+    <a href="Intro.html">
+        <img src="image/back.png" height="55px" width="50px" title="Tombol Kembali" style="float:left; margin-left: 10px; margin-top: 10px;">
+    </a>
+
+    <header>
+    <h2>Biodata Saya</h2>    
+    </header>
+
+    
+    <section>  
+    <nav> 
+        <ul>
+            <li><img src="image/profil.jpg" alt="Foto Profil" title="Wajah Tampan" height="200px" width="300px"></li>
+            <li><img src="https://hisarcode-galery.herokuapp.com/img/portofolio/3.jpg" alt="Foto Profil" title="Wajah Tampan" height="200px" width="300px"></li>
+        </ul>
+    </nav>
+
+    <article>
+    <h3>
         <table cellspacing="10"> 
             <tr>
                 <td>Nama </td> 
@@ -111,17 +146,8 @@
                 <td>Ukuran Baju </td>
                 <td>: XL</td>
             </tr>
-
-        </table>
-
-    <div class=batas></div>
+        </table>     
     
-    <img src="https://hisarcode-galery.herokuapp.com/img/portofolio/3.jpg" alt="Foto Profil" title="Wajah Tampan" height="300px" width="400px"
-    style="float: left">     
-
-
-    
-    <h3 style="margin-left: 110px; float: left ; margin-top: 0px ">
         Riwayat Pendidikan : 
         <ol type="1">
             <li>SD Pangudi Luhur Santo Yosef Ketapang</li>
@@ -144,10 +170,13 @@
             <li>Membaca </li>
         </ul>
     </h3>
-    <center> <h3>Hasil-Hasil Karya Saya</h3>  </center>
-    <center><iframe src="https://hisarcode-galery.herokuapp.com/index.html"></iframe></center>
+    </article>
+     
+    <article>    
+    <center> <h3>Hasil-Hasil Karya Saya</h3> </center>
+    <iframe src="https://hisarcode-galery.herokuapp.com/index.html"></iframe>
 
-    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/BqMPDshMBhA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/BqMPDshMBhA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
     <center>
     <video width="320" height="240" controls>
@@ -157,10 +186,14 @@
     
     </video> 
     </center>
-    
+    </article>
+    </section>
+
+    <footer>
+
     <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Check Waktu</button>
     <p id="demo"><p>
-    
+    </footer>
        
 
 </body>
