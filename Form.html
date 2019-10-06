@@ -47,6 +47,25 @@
 			width:200px;
 			height:50px; 
 		}
+		@media (max-width: 600px) {
+			body{
+				margin:0px;
+			}
+			section{
+				width: 100%;
+			}
+			section p{
+				font-size: 40px;
+			}
+			form{
+				margin-left:8%;
+			}
+			button{
+				margin-left: 0;
+			}
+			tr {width: 100%;}
+			 .JKK{font-size: 13px;}
+		}
 	</style>
 	
 </head>
@@ -84,7 +103,7 @@
 
 			<tr>
 				<td><label for="nama">Jenis Kelamin</label></td>
-				<td  colspan="2" align="left">:
+				<td class="JKK"  colspan="2" align="left">:
 					<input class="JK" type="radio" id="pria" name="jeniskelamin"><label for="pria">Pria</label>
 					<input class="JK" type="radio" id="wanita" name="jeniskelamin"><label for="wanita">Wanita</label>
 				</td>
@@ -107,7 +126,7 @@
 
 			<tr>
 				<td><label for="nama">Hobi</label></td>				
-				<td colspan="2" align="left"> :
+				<td class="JKK" colspan="2" align="left"> :
 					<input class="CB" type="checkbox" id="menyanyi"><label for="menyanyi">Menyanyi</label>
 					<input class="CB" type="checkbox" id="olahraga"><label for="olahraga">Olahraga</label>
 					<input class="CB" type="checkbox" id="ngoding"><label for="ngoding">Ngoding</label>
