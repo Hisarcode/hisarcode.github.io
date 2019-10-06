@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Form</title>
+	<style>
+		body{
+			background-image: linear-gradient(to right, #c17692, #fada80);
+			margin-top: 70px;
+			align-items: center;
+			margin-right: 20%;
+			margin-left: 20%;
+		}
+		section{
+			border-radius: 25px;
+			font-family:Montserrat;
+			background-color: #7c0151;
+			color:#ced8f3; 			
+
+		}
+		form{margin-left: 25%;}
+		section p{
+			text-align: center;
+			font-size: 50px;
+			margin-bottom: 0px;			
+		}
+
+		section table tr td input , select{			
+			width:200px;
+			height:20px; 
+			background-color: #a9a9a9;
+		}
+		textarea{
+			background-color: #a9a9a9;
+		}
+		.CB , .JK{			
+			width:15px;
+			height:15px; 
+			background-color: #a9a9a9;
+		}
+		button{
+			width:80px;
+			height:20px; 
+			margin-left: 80px;
+		}
+
+		textarea{
+			width:200px;
+			height:50px; 
+		}
+	</style>
+	
+</head>
+<body>
+
+	<section >
+		<p>Registrasi Member</p>
+	<form >
+		<table cellspacing="10">
+			<tr>
+				<td><label for="nama">Nama </label></td>
+				<td>: <input type="text" id="nama" placeholder="ex : Hisar" ></td>
+			</tr>
+
+			<tr>
+				<td><label for="username">Username </label></td>
+				<td>: <input type="text" id="username" placeholder="ex: @HISAR"></td>
+			</tr>
+			
+			<tr>
+				<td><label for="tempatLahir">Tempat Lahir </label></td>
+				<td>: <input type="text" id="username" placeholder="ex: Ketapang"></td>
+			</tr>
+
+			<tr>
+				<td><label for="tanggalLahir">Tangal Lahir</label></td>
+				<td>: <input type="date" id="tanggal" ></td>
+			</tr>
+
+			 <tr>
+				<td><label for="password">Password </label></td>
+				<td>: <input type="password" id="password" placeholder="masukkan password...." ></td>
+			</tr>
+
+
+			<tr>
+				<td><label for="nama">Jenis Kelamin</label></td>
+				<td  colspan="2" align="left">:
+					<input class="JK" type="radio" id="pria" name="jeniskelamin"><label for="pria">Pria</label>
+					<input class="JK" type="radio" id="wanita" name="jeniskelamin"><label for="wanita">Wanita</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Regional</td>
+				<td>:
+					<select>						
+						<option selected="Pilih Regional">Pilih Regional</option>						
+						<option>Pontianak Kota</option>
+						<option>Pontianak Timur</option>
+						<option>Pontianak Barat</option>
+						<option>Pontianak Selatan</option>
+						<option>Pontianak Tenggara</option>
+						<option>Luar Pontianak</option>						
+					</select>	
+				</td>				
+			</tr>
+
+			<tr>
+				<td><label for="nama">Hobi</label></td>				
+				<td colspan="2" align="left"> :
+					<input class="CB" type="checkbox" id="menyanyi"><label for="menyanyi">Menyanyi</label>
+					<input class="CB" type="checkbox" id="olahraga"><label for="olahraga">Olahraga</label>
+					<input class="CB" type="checkbox" id="ngoding"><label for="ngoding">Ngoding</label>
+				</td>		
+			</tr>
+
+			<tr>
+				<td><label for="favColor">Warna Favorit</label></td>
+				<td>: <input type="color" id="favColor" ></td>
+			</tr>
+
+			<tr>
+				<td>Visi</td>
+				<td><textarea></textarea></td>
+			</tr>
+
+
+			<tr>
+				<td colspan="2" align="right" >
+					<button type="button" onclick="window.location.href='Intro.html'">Batal!</button>
+					<button type="reset">Clear</button>
+					<button type="button" onclick="window.location.href='Sukses.html'">Kirim!</button>
+				</td>
+			</tr>
+		</table>
+
+	</form>
+	
+</section>
+
+</body>
+
+</html>
